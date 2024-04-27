@@ -4,6 +4,9 @@ require_once('objeto.php');
 require_once('recolectable.php');
 require_once('recolectar.php');
 
+
+// Clase aldeano Chino que hereda de Aldeano en el archivo objeto.php
+
 class AldeanoChino extends Aldeano {
 
     
@@ -12,12 +15,11 @@ class AldeanoChino extends Aldeano {
 
 
         $this -> bonus = $bonus;
-
     }
-
-
-
 }
+
+
+// Clase aldeano Franco que hereda de Aldeano en el archivo objeto.php
 
 
 class AldeanoFranco extends Aldeano {
@@ -35,11 +37,13 @@ $this -> bonus = $bonus;
 
 }
 
+// Instancias de prueba para las clases que heredan.
+
 $xiao = new AldeanoChino();
 
 $arbusto0 = new arbusto();
 
-echo $xiao -> setVelocidadRecoleccion(18);
+$xiao -> setVelocidadRecoleccion(18);
 
 
 echo 'la velocidad es de: '.$xiao -> getVelocidad();
@@ -59,3 +63,5 @@ $franco -> setVelocidadRecoleccion(18);
 echo 'la velocidad es de: '.$franco -> getVelocidad().'<br>';
 
 $franco -> recolectar($arbusto1);
+
+?>
