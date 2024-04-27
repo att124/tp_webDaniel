@@ -52,6 +52,8 @@ echo '<br>';
 
 $xiao -> recolectar($arbusto0);
 
+echo 'El bonus del aldeano es: '.$xiao -> getBonus().'%'.'<br>';
+
 echo 'Aldeano franco'.'<br>';
 
 $franco = new AldeanoFranco();
@@ -61,6 +63,8 @@ $arbusto1 = new Arbusto();
 $franco -> setVelocidadRecoleccion(18);
 
 echo 'la velocidad es de: '.$franco -> getVelocidad().'<br>';
+
+echo 'el bonus del aldeano es: '.$franco -> getBonus().'%'.'<br>';
 
 $franco -> recolectar($arbusto1);
 
