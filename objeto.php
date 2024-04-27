@@ -1,8 +1,9 @@
 <?php
 
+require_once('recolectable.php');
+require_once('recolectar.php');
 
-
-class Aldeano {
+class Aldeano implements Recolectar {
 
 
 private $VelocidadRecoleccion; 
@@ -15,11 +16,11 @@ private $VelocidadRecoleccion;
 
 }
 
-function recolectar(Arbusto $arbusto){
+function recolectar(Recolectable $recolectable){
 
 $tiempoRecoleccion;
 
-$tiempoRecoleccion = ceil($arbusto->getAlimento() / $this->VelocidadRecoleccion);
+$tiempoRecoleccion = ceil($recolectable->getAlimento() / $this->VelocidadRecoleccion);
 
 echo 'El aldeano tardará '.$tiempoRecoleccion.' minutos en recolectar todo el alimento'.'<br>';
 
@@ -30,7 +31,7 @@ echo 'El aldeano tardará '.$tiempoRecoleccion.' minutos en recolectar todo el a
 }
 
 
-class Arbusto {
+class Arbusto implements Recolectable{
 
 
     private $CantidadAlimento;
@@ -58,7 +59,7 @@ function getAlimento(){
 
 
 
-class Pesquero {
+class Pesquero implements Recolectar {
 
 private $VelocidadRecoleccion;
 
@@ -70,12 +71,12 @@ $this -> VelocidadRecoleccion = $VelocidadRecoleccion;
 
 }
 
-function recolectar(BancoDePesca $peces){
+function recolectar(Recolectable $recolectable){
 
 
     $tiempoRecoleccion;
 
-    $tiempoRecoleccion = ceil($peces->getAlimento() / $this->VelocidadRecoleccion);
+    $tiempoRecoleccion = ceil($recolectable->getAlimento() / $this->VelocidadRecoleccion);
 
     echo 'El barco demorará '.$tiempoRecoleccion.' minutos en recolectar todos los peces.'.'<br>';
 
@@ -88,7 +89,7 @@ function recolectar(BancoDePesca $peces){
 
 
 
-class BancoDePesca {
+class BancoDePesca implements Recolectable {
 
 private $CantidadAlimento;
 
