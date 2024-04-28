@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css.css">
-    <title>Formulario</title>
-</head>
-<body>
+<?php require_once('complementos/nav.php');?>
 <!-- Creacion de un formulario posiblemente para crear los objetos.-->
 
-<h1>Formulario</h1>
+<h1 id="inicio">Formulario</h1>
 
 
 <?php
+
+error_reporting(0);
+
+echo '<div class=fnds>';
 
 if(($_POST['seleccion']==null)){
 
@@ -35,7 +31,7 @@ echo '<h2>Barco pesquero </h2>';
 
 if (!isset($_POST['seleccion'])) {
 
-    echo '<h3> Seleccionar </h3>';
+    echo '<h3 class=sel> Seleccionar </h3>';
 
     echo "
     <form action=# method=post>
@@ -60,7 +56,7 @@ if (!isset($_POST['seleccion'])) {
         if ($_POST['seleccion']=='aldeano'){
         // falta definir el action problamente sea otra página.
             echo "
-           <h3> Creacion de aldeano </h3>
+           <h3 class=sel> Creacion de aldeano </h3>
            <form action=creacion.php method=post> 
             <label id=nombre>nombre: </label>
             <input type=text id=nombre name=nombre requiere>
@@ -100,7 +96,7 @@ if (!isset($_POST['seleccion'])) {
             
             echo "
             
-            <h3>Creacion de barco</h3>
+            <h3 class=sel>Creacion de barco</h3>
             <form action=# method=post>
             <label> Nombre del barco </label>
             <input type=text id=nombre requiere>
@@ -125,12 +121,8 @@ if (!isset($_POST['seleccion'])) {
     }
  
 
+echo '</div>';
+
 ?>
 
-</body>
-</html>
-
-<?php
-//require_once('objeto.php');
-//require_once('aldeano.php');
-?>
+<?php require_once('complementos/footer.php');
