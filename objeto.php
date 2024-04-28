@@ -10,13 +10,13 @@ require_once('recolectar.php');
 
 abstract class Aldeano implements Recolectar {
     
-    
+    public $nombre;
     private $VelocidadRecoleccion; 
     public $bonus;
     
-    public function __construct($VelocidadRecoleccion,$bonus=0){
+    public function __construct($nombre,$VelocidadRecoleccion,$bonus=0){
         
-        
+        $this-> nombre = $nombre;
         $this -> VelocidadRecoleccion = $VelocidadRecoleccion;
         $this -> bonus = $bonus;
         
@@ -81,6 +81,16 @@ function getVelocidad () {
     return $this -> VelocidadRecoleccion;
     
 }
+
+function getNombre(){
+
+
+return $this -> nombre;
+
+}
+
+
+
 
 }
 

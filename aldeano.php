@@ -9,11 +9,11 @@ require_once('recolectar.php');
 
 class AldeanoChino extends Aldeano {
 
-    
+    public $nombre;
 
-    function __construct($bonus=0){
+    function __construct(String $nombre,$bonus=0){
 
-
+        $this-> nombre = $nombre;
         $this -> bonus = $bonus;
     }
 }
@@ -24,9 +24,12 @@ class AldeanoChino extends Aldeano {
 
 class AldeanoFranco extends Aldeano {
 
-function __construct($bonus=25){
+public $nombre;
 
-$this -> bonus = $bonus;
+function __construct(String $nombre,$bonus=25){
+    
+    $this-> nombre = $nombre;
+    $this -> bonus = $bonus;
 
 }
 
@@ -39,7 +42,11 @@ $this -> bonus = $bonus;
 
 // Instancias de prueba para las clases que heredan.
 
-$xiao = new AldeanoChino();
+echo '-----------------------------------------------------'.'<br>';
+
+echo 'Aldeano Chino'.'<br>';
+
+$xiao = new AldeanoChino("Xiao");
 
 $arbusto0 = new arbusto();
 
@@ -54,9 +61,12 @@ $xiao -> recolectar($arbusto0);
 
 echo 'El bonus del aldeano es: '.$xiao -> getBonus().'%'.'<br>';
 
+
+echo '-----------------------------------------------------'.'<br>';
+
 echo 'Aldeano franco'.'<br>';
 
-$franco = new AldeanoFranco();
+$franco = new AldeanoFranco("Gustavo");
 
 $arbusto1 = new Arbusto();
 
@@ -67,5 +77,7 @@ echo 'la velocidad es de: '.$franco -> getVelocidad().'<br>';
 echo 'el bonus del aldeano es: '.$franco -> getBonus().'%'.'<br>';
 
 $franco -> recolectar($arbusto1);
+
+
 
 ?>

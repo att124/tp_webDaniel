@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
     <title>Formulario</title>
 </head>
 <body>
@@ -60,9 +61,15 @@ if (!isset($_POST['seleccion'])) {
         // falta definir el action problamente sea otra página.
             echo "
            <h3> Creacion de aldeano </h3>
-           <form action=# method=post> 
+           <form action=creacion.php method=post> 
             <label id=nombre>nombre: </label>
-            <input type=text id=nombre requiere>
+            <input type=text id=nombre name=nombre requiere>
+            <br>
+            <label for=opciones>Seleccionar una opción</label>
+            <select id=opciones name=opciones requiere>
+            <option value=Aldeanochino>Aldeano Chino</option>
+            <option value=AldeanoFranco>Aldeano Franco</option>
+            </select>
             <br>
             <button type=submit> Crear Aldeano </button>
             </form> 
