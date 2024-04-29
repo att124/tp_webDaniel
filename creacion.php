@@ -67,12 +67,25 @@ $nombre -> recolectar($arbusto).'<br>';
 
 echo '---------------------------------------------------------';
 
-} else {
+} elseif ($selec == 'pesquero') {
+
+    echo '----------------------------------------------------------------'.'<br>';
+
+    $pesquero = new Pesquero();
+
+    $pesquero -> setNombreBarco($nombre);
+
+    echo 'El nombre de tu barco es: '.$pesquero -> getNombrePesquero().'<br>';
+
+    $peces = new BancoDePesca();
+
+    echo 'La cantidad de peces del Banco de pesca es de: '.$peces -> getAlimento().'<br>';
 
 
-    echo 'nada';
 
+    $pesquero -> recolectar($peces);
 
+echo '-------------------------------------------------------------------'.'<br>';
 
 }
 

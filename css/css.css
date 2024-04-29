@@ -42,6 +42,7 @@ nav {
     background-color: #24252A;
 margin: 0;
 padding: 0;
+margin-bottom: 200px;
 }
 
 .color{ 
@@ -78,7 +79,7 @@ margin-left: 50px;
 
 #inicio{
 
-    margin-top: 200px;
+    margin-top: 0px;
 
 }
 /* fin footer */
@@ -119,5 +120,39 @@ margin-top: 30px;
 
 }
 
+
+
+#sec{
+
+display: block;
+
+}
+
+.test{
+
+max-width: 500px;
+margin: 50px auto;
+padding: 20px;
+border: 2px solid;
+border-radius: 10px;
+background-color: aqua;
+
+
+
+}
+
+
+.espac{
+
+    margin-top: 250px;
+
+}
+
+.bodyind{
+
+background-color: bisque;
+
+
+}
 
 /* fin del css para el formulario */

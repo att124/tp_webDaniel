@@ -20,7 +20,7 @@
     <title>Aldeanos y barcos</title>
 </head>
 
-<body>
+<body class="bodyind">
     
 <header>
 
@@ -50,13 +50,3 @@
         </nav>
 
     </header>
-
-
-
-
-
-<?php
-
-
-
-?>

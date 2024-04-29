@@ -1,38 +1,30 @@
-<?php require_once('complementos/nav.php');?>
+<?php require_once('complementos/navindex.php');?>
 <!-- Creacion de un formulario posiblemente para crear los objetos.-->
 
 
 
-<h1 id="inicio">Formulario</h1>
 
-<main id="bodyindx">
+<main class="espac">
+    
+    
+<div class="test">
+    
+<h1 id="inicio">Formulario</h1>
 
 <?php
 
 $val = "formajs";
 
-error_reporting(0);
+//error_reporting(0);
 
 
 echo '<div class=fnds>';
 
-if(($_POST['seleccion']==null)){
-
-    echo '<h2 class=formjs>Aldeano y barco pesquero</h2>';
-
-} elseif ($_POST['seleccion']=='aldeano') {
-
-echo '<h2 class=formajs>Aldeano</h2>';
-
-} else {
-
-echo '<h2 class=formajs>Barco pesquero </h2>';
-
-}
 
 
 
-    echo'<section>';
+
+    echo'<section id=sec>';
 
 
 if (!isset($_POST['seleccion'])) {
@@ -43,9 +35,9 @@ if (!isset($_POST['seleccion'])) {
     <form action=# method=post>
     
     <input type = radio id=aldeano name=seleccion value=aldeano>
-    <label for=aldeano> Aldeano </label> <br>
+    <label for=aldeano> <img src=https://fakeimg.pl/200x70/?text=1 alt=foto 1 width=200 height=50 class=rounded img-fluid d-md-block>Aldeano</label> <br>
     <input type=radio id=barco name=seleccion value=barco>
-    <label for=barco id=esp1>Barco</label><br>
+    <label for=barco id=esp1><img src=https://fakeimg.pl/200x70/?text=1 alt=foto 1 width=200 height=50 class=rounded img-fluid d-md-block>Barco</label><br>
     <button type=submit>Seleccionar</button>
     
     </form>
@@ -75,18 +67,12 @@ if (!isset($_POST['seleccion'])) {
             <br>
             <button type=submit class=btnalde> Crear Aldeano </button>
             </form> 
-
             <form action=index.php method=post class=espaciadofm> 
             <input type=hidden name=cancelar value=cancelar>
             <button type=submit> Cancelar </button>
-            </form>
-            ";
+            </form>";
 
-            if($_POST['cancelar']=='cancelar'){
-
-                $_POST['seleccion']==null;
             
-            }
 
 
 
@@ -103,23 +89,20 @@ if (!isset($_POST['seleccion'])) {
             echo "
             
             <h3 class=sel>Creacion de barco</h3>
-            <form action=# method=post>
+            <form action=creacion.php method=post>
             <label> Nombre del barco </label>
-            <input type=text id=nombre requiere>
+            <input type=text id=nombre name=nombre requiere>
             <br>
+            <input type=hidden name=opciones value=pesquero>
             <button type=submit class=btnalde>Crear barco </button>
             </form>
-            <form method=post action=index.php class=espaciadofm>
+
+            <form action=index.php method=post class=espaciadofm> 
             <input type=hidden name=cancelar value=cancelar>
             <button type=submit> Cancelar </button>
-            </form> 
+            </form>
+
             ";
-            if($_POST['cancelar']=='cancelar'){
-                
-                $_POST['seleccion']==null;
-                
-                
-            }
             
             
             
@@ -131,6 +114,8 @@ echo '</div>';
 
 ?>
 
+</div>
+
 </main>
 
-<?php require_once('complementos/footer.php');
+<?php require_once('complementos/footer.php'); ?>

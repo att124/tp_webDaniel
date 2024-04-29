@@ -7,7 +7,7 @@ require_once('recolectar.php');
 class Pesquero implements Recolectar {
     
     private $VelocidadRecoleccion;
-    private $nombrebarco;
+    public $nombrebarco;
 
     function __construct($VelocidadRecoleccion=18,$nombrebarco='pesquero'){
         
@@ -52,7 +52,7 @@ class Pesquero implements Recolectar {
 
     function getNombrePesquero(){
 
-        return $this ->     nombrebarco;
+        return $this ->  nombrebarco;
 
 
     }
@@ -60,8 +60,8 @@ class Pesquero implements Recolectar {
     
 }
 
-$barca = new Pesquero();
-$barca -> setNombreBarco("Barca");
-echo 'El nombre de tu barco pesquero es: '.$barca -> getNombrePesquero();
+//$barca = new Pesquero();
+//$barca -> setNombreBarco("Barca");
+//echo 'El nombre de tu barco pesquero es: '.$barca -> getNombrePesquero();
 
 ?>
