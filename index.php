@@ -8,6 +8,7 @@
 
 error_reporting(0);
 
+
 echo '<div class=fnds>';
 
 if(($_POST['seleccion']==null)){

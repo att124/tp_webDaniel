@@ -1,83 +1,98 @@
 <?php
 
-require_once('objeto.php');
 require_once('recolectable.php');
 require_once('recolectar.php');
 
+// Clase aldeano. ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// Clase aldeano Chino que hereda de Aldeano en el archivo objeto.php
+// abstract class Aldeano implements Recolectar (Genera problemas al tener intaciado el primero aldeano.)
 
-class AldeanoChino extends Aldeano {
-
-    public $nombre;
-
-    function __construct(String $nombre,$bonus=0){
-
-        $this-> nombre = $nombre;
-        $this -> bonus = $bonus;
-    }
-}
-
-
-// Clase aldeano Franco que hereda de Aldeano en el archivo objeto.php
-
-
-class AldeanoFranco extends Aldeano {
-
-public $nombre;
-
-function __construct(String $nombre,$bonus=25){
+abstract class Aldeano implements Recolectar {
     
-    $this-> nombre = $nombre;
-    $this -> bonus = $bonus;
+    public $nombre;
+    private $VelocidadRecoleccion; 
+    public $bonus;
+    
+    public function __construct($nombre,$VelocidadRecoleccion,$bonus=0){
+        
+        $this-> nombre = $nombre;
+        $this -> VelocidadRecoleccion = $VelocidadRecoleccion;
+        $this -> bonus = $bonus;
+        
+    }
+
+// funcion recolectar del aldeano se hereda tanto en el aldeano chino y franco por ser public.
+
+function recolectar(Recolectable $recolectable){
+    
+    $tiempoRecoleccion;
+    
+// funcion ceil redondea el numero ya que el resultado es 6.94 periodico, $tiempo de recoleccion calcula el tiempo que se requiere para que el aldeano recolecte todo del arbusto
+// formula (Cantidad de alimento del arbusto) / (la velocidad de recoleccion que siempre es 18)
+
+    $calculobonus = $this->VelocidadRecoleccion * $this->bonus;
+
+    $tiempoRecoleccion = ceil( $recolectable->getAlimento() / ($this->VelocidadRecoleccion + ($this->VelocidadRecoleccion * ($this->bonus/100) )));
+    
+    echo 'El aldeano tardará '.$tiempoRecoleccion.' minutos en recolectar todo el alimento'.'<br>';
+    
+    
+}
+
+// get de bonus
+function getBonus(){
+    
+    return $this->bonus;
+
+}
+
+// fin get de bonus
+
+
+// Set de velocidad, el atribut VelocidadRecoleccion al ser privado las clases hijas no pueden obtener el valor por defecto deben setearlo.
+
+function SetVelocidadRecoleccion($velocidad) {
+    
+    if ($velocidad == 18 ){
+        
+        
+        $this -> VelocidadRecoleccion = $velocidad;
+        
+    } else {
+        
+        echo 'error, no se puede crear aldeanos con mayor velocidad de recoleccion que 18.';
+        
+        $velocidad = 18;
+        
+        $this-> VelocidadRecoleccion = $velocidad;
+        
+    }
+    
+}
+
+// fin de la funcion setter.
+
+
+// para probar la velocidad de recoleccion de las clases hijas.
+
+function getVelocidad () {
+    
+    return $this -> VelocidadRecoleccion;
+    
+}
+
+function getNombre(){
+
+
+return $this -> nombre;
 
 }
 
 
 
 
-
-
 }
 
-// Instancias de prueba para las clases que heredan.
-
-echo '-----------------------------------------------------'.'<br>';
-
-echo 'Aldeano Chino'.'<br>';
-
-$xiao = new AldeanoChino("Xiao");
-
-$arbusto0 = new arbusto();
-
-$xiao -> setVelocidadRecoleccion(18);
-
-
-echo 'la velocidad es de: '.$xiao -> getVelocidad();
-
-echo '<br>';
-
-$xiao -> recolectar($arbusto0);
-
-echo 'El bonus del aldeano es: '.$xiao -> getBonus().'%'.'<br>';
-
-
-echo '-----------------------------------------------------'.'<br>';
-
-echo 'Aldeano franco'.'<br>';
-
-$franco = new AldeanoFranco("Gustavo");
-
-$arbusto1 = new Arbusto();
-
-$franco -> setVelocidadRecoleccion(18);
-
-echo 'la velocidad es de: '.$franco -> getVelocidad().'<br>';
-
-echo 'el bonus del aldeano es: '.$franco -> getBonus().'%'.'<br>';
-
-$franco -> recolectar($arbusto1);
-
-
+// Fin de la clase aldeano --------------------------------------------------------------------------------------------------------------------------------------
 
 ?>

@@ -1,9 +1,15 @@
 <?php
 
-require_once('objeto.php');
 require_once('aldeano.php');
+require_once('herencia.php');
+require_once('arbusto.php');
+require_once('pesquero.php');
+require_once('bancodepesca.php');
+
+
 //require_once('recolectable.php');
 //require_once('recolectar.php');
+
 
 if (isset($_POST['nombre']) && $_POST['opciones']){
 

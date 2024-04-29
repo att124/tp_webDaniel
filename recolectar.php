@@ -7,7 +7,7 @@ interface Recolectar{
 
     function recolectar(Recolectable $recolectable);
    
-   // function recolectar(Arbusto $arbusto);
+     // function recolectar(Arbusto $arbusto);
 
 
 }
