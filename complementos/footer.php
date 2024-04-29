@@ -1,4 +1,4 @@
-<?php require_once('nav.php');?>
+
 <footer class="footer fixed-bottom colordepie text-black text-center py-2">
     <div id="piedepag">
  <div class="row">

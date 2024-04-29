@@ -75,13 +75,11 @@ echo '---------------------------------------------------------';
 
     $pesquero -> setNombreBarco($nombre);
 
-    echo 'El nombre de tu barco es: '.$pesquero -> getNombrePesquero().'<br>';
-
+     echo 'El nombre de tu barco es: '.$pesquero -> getNombrePesquero().'<br>';
+          
     $peces = new BancoDePesca();
 
     echo 'La cantidad de peces del Banco de pesca es de: '.$peces -> getAlimento().'<br>';
-
-
 
     $pesquero -> recolectar($peces);
 
