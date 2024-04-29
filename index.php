@@ -30,15 +30,15 @@ echo '<div class=fnds>';
 if (!isset($_POST['seleccion'])) {
 
     echo '<h3 class=sel> Seleccionar </h3>';
-
+                                                            // primero va el aldeano y luego el pesquero.
     echo "
     <form action=# method=post>
     
     <input type = radio id=aldeano name=seleccion value=aldeano>
-    <label for=aldeano> <img src=https://fakeimg.pl/200x70/?text=1 alt=foto 1 width=200 height=50 class=rounded img-fluid d-md-block>Aldeano</label> <br>
+    <label for=aldeano> <img src=https://fakeimg.pl/200x70/?text=1 alt=foto 1 width=200 height=50 class=rounded img-fluid d-md-block></label> <br>
     <input type=radio id=barco name=seleccion value=barco>
-    <label for=barco id=esp1><img src=https://fakeimg.pl/200x70/?text=1 alt=foto 1 width=200 height=50 class=rounded img-fluid d-md-block>Barco</label><br>
-    <button type=submit>Seleccionar</button>
+    <label for=barco id=esp1><img src=https://fakeimg.pl/200x70/?text=1 alt=foto 1 width=200 height=50 class=rounded img-fluid d-md-block></label><br>
+    <button type=submit id=botonins>Seleccionar</button>
     
     </form>
     
@@ -59,7 +59,7 @@ if (!isset($_POST['seleccion'])) {
             <label id=nombre>nombre: </label>
             <input type=text id=nombre name=nombre requiere>
             <br>
-            <label for=opciones>Seleccionar una opción</label>
+            <label for=opciones>Seleccionar</label>
             <select id=opciones name=opciones requiere>
             <option value=Aldeanochino>Aldeano Chino</option>
             <option value=AldeanoFranco>Aldeano Franco</option>
@@ -99,7 +99,7 @@ if (!isset($_POST['seleccion'])) {
 
             <form action=index.php method=post class=espaciadofm> 
             <input type=hidden name=cancelar value=cancelar>
-            <button type=submit> Cancelar </button>
+            <button type=submit id=ter> Cancelar </button>
             </form>
 
             ";

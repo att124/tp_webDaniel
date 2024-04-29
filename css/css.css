@@ -133,14 +133,17 @@ display: block;
 max-width: 500px;
 margin: 50px auto;
 padding: 20px;
+background-size: cover;
+
 border: 2px solid;
 border-radius: 10px;
-background-color: aqua;
+background-image: url('../imgs/test3.png');
 
 
 
 }
 
+#ter{margin-bottom: 50px;}
 
 .espac{
 
@@ -156,5 +159,7 @@ background-position: center;
 background-attachment: fixed;
 
 }
+
+#botonins{margin-bottom: 30px;}
 
 /* fin del css para el formulario */
