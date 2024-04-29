@@ -10,7 +10,11 @@ require_once('recolectar.php');
 
 class AldeanoChino extends Aldeano {
 
+// El atributo bonus no se inicia como atributo de la clase AldeanoChino/AldeanoFranco ya que es un atributo heredado de la clase Aldeano(padre).
+
     public $nombre;
+
+// En vez de usar null utilizo 0 ya que a la hora de mostrar el bonus figura como " ".
 
     function __construct(String $nombre,$bonus=0){
 

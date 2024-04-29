@@ -1,10 +1,15 @@
 <?php require_once('complementos/nav.php');?>
 <!-- Creacion de un formulario posiblemente para crear los objetos.-->
 
+
+
 <h1 id="inicio">Formulario</h1>
 
+<main id="bodyindx">
 
 <?php
+
+$val = "formajs";
 
 error_reporting(0);
 
@@ -13,15 +18,15 @@ echo '<div class=fnds>';
 
 if(($_POST['seleccion']==null)){
 
-    echo '<h2>Aldeano y barco pesquero</h2>';
+    echo '<h2 class=formjs>Aldeano y barco pesquero</h2>';
 
 } elseif ($_POST['seleccion']=='aldeano') {
 
-echo '<h2>Aldeano</h2>';
+echo '<h2 class=formajs>Aldeano</h2>';
 
 } else {
 
-echo '<h2>Barco pesquero </h2>';
+echo '<h2 class=formajs>Barco pesquero </h2>';
 
 }
 
@@ -40,7 +45,7 @@ if (!isset($_POST['seleccion'])) {
     <input type = radio id=aldeano name=seleccion value=aldeano>
     <label for=aldeano> Aldeano </label> <br>
     <input type=radio id=barco name=seleccion value=barco>
-    <label for=barco>Barco</label><br>
+    <label for=barco id=esp1>Barco</label><br>
     <button type=submit>Seleccionar</button>
     
     </form>
@@ -68,10 +73,10 @@ if (!isset($_POST['seleccion'])) {
             <option value=AldeanoFranco>Aldeano Franco</option>
             </select>
             <br>
-            <button type=submit> Crear Aldeano </button>
+            <button type=submit class=btnalde> Crear Aldeano </button>
             </form> 
 
-            <form action=index.php method=post> 
+            <form action=index.php method=post class=espaciadofm> 
             <input type=hidden name=cancelar value=cancelar>
             <button type=submit> Cancelar </button>
             </form>
@@ -102,9 +107,9 @@ if (!isset($_POST['seleccion'])) {
             <label> Nombre del barco </label>
             <input type=text id=nombre requiere>
             <br>
-            <button type=submit>Crear barco </button>
+            <button type=submit class=btnalde>Crear barco </button>
             </form>
-            <form method=post action=index.php>
+            <form method=post action=index.php class=espaciadofm>
             <input type=hidden name=cancelar value=cancelar>
             <button type=submit> Cancelar </button>
             </form> 
@@ -125,5 +130,7 @@ if (!isset($_POST['seleccion'])) {
 echo '</div>';
 
 ?>
+
+</main>
 
 <?php require_once('complementos/footer.php');

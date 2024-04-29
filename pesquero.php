@@ -7,12 +7,13 @@ require_once('recolectar.php');
 class Pesquero implements Recolectar {
     
     private $VelocidadRecoleccion;
-    
-    function __construct($VelocidadRecoleccion=18){
+    private $nombrebarco;
+
+    function __construct($VelocidadRecoleccion=18,$nombrebarco='pesquero'){
         
         
         $this -> VelocidadRecoleccion = $VelocidadRecoleccion;
-        
+        $this -> nombrebarco = $nombrebarco;
         
     }
     
@@ -29,9 +30,38 @@ class Pesquero implements Recolectar {
         
         
     }
-    
+
+
+    function setNombreBarco($nombre){
+
+        if (isset($nombre)){
+        
+        
+            $this -> nombrebarco = $nombre;
+            
+        } else {
+            
+            echo 'nombre invalido.';
+            
+        }
+
+
+
+    }
+
+
+    function getNombrePesquero(){
+
+        return $this ->     nombrebarco;
+
+
+    }
     
     
 }
+
+$barca = new Pesquero();
+$barca -> setNombreBarco("Barca");
+echo 'El nombre de tu barco pesquero es: '.$barca -> getNombrePesquero();
 
 ?>

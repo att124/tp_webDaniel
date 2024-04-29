@@ -13,7 +13,7 @@ abstract class Aldeano implements Recolectar {
     private $VelocidadRecoleccion; 
     public $bonus;
     
-    public function __construct($nombre,$VelocidadRecoleccion,$bonus=0){
+    public function __construct($nombre,$VelocidadRecoleccion=18,$bonus=0){
         
         $this-> nombre = $nombre;
         $this -> VelocidadRecoleccion = $VelocidadRecoleccion;
@@ -60,7 +60,7 @@ function SetVelocidadRecoleccion($velocidad) {
         
     } else {
         
-        echo 'error, no se puede crear aldeanos con mayor velocidad de recoleccion que 18.';
+        echo 'el atributo se ha cambiado a 18 en velocidad de recoleccion.';
         
         $velocidad = 18;
         
@@ -80,6 +80,8 @@ function getVelocidad () {
     return $this -> VelocidadRecoleccion;
     
 }
+
+// funcion get del nombre del aldeano.
 
 function getNombre(){
 

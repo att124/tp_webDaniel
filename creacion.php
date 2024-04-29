@@ -11,7 +11,7 @@ require_once('bancodepesca.php');
 //require_once('recolectar.php');
 
 
-if (isset($_POST['nombre']) && $_POST['opciones']){
+if ((isset($_POST['nombre'])) && $_POST['opciones']){
 
 $nombre = $_POST['nombre'];
 $selec = $_POST['opciones'];
