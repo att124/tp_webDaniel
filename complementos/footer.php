@@ -1,6 +1,6 @@
 
 <footer class="footer fixed-bottom colordepie text-black text-center py-2">
-    <div id="piedepag">
+    <div>
  <div class="row">
 
 <div class="col-5"><p class="textfooter"> Alumno: Fernández Daniel </p> </div>

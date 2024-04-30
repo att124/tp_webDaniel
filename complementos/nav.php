@@ -40,10 +40,10 @@
                         <a class="nav-link color" id="principal" href="index.php">index</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color" href="#">Lore</a>
+                        <a class="nav-link color" href="lore.php">Lore</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color" href="#">Wiki</a>
+                        <a class="nav-link color" href="wiki.php">Wiki</a>
                     </li>
                 </ul>
             </div>

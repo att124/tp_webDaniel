@@ -57,10 +57,10 @@ if (!isset($_POST['seleccion'])) {
            <h3 class=sel> Creacion de aldeano </h3>
            <form action=creacion.php method=post> 
             <label id=nombre>nombre: </label>
-            <input type=text id=nombre name=nombre requiere>
+            <input type=text id=nombre name=nombre required>
             <br>
             <label for=opciones>Seleccionar</label>
-            <select id=opciones name=opciones requiere>
+            <select id=opciones name=opciones required>
             <option value=Aldeanochino>Aldeano Chino</option>
             <option value=AldeanoFranco>Aldeano Franco</option>
             </select>
@@ -91,7 +91,7 @@ if (!isset($_POST['seleccion'])) {
             <h3 class=sel>Creacion de barco</h3>
             <form action=creacion.php method=post>
             <label> Nombre del barco </label>
-            <input type=text id=nombre name=nombre requiere>
+            <input type=text id=nombre name=nombre required>
             <br>
             <input type=hidden name=opciones value=pesquero>
             <button type=submit class=btnalde>Crear barco </button>
