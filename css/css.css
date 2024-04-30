@@ -237,8 +237,55 @@ text-align: center;
 
 /* Inicio css para el Lore */
 
-.lore{ margin-top: 100px;}
+.lore{ margin-top: 100px;
+    margin-bottom: 15px;}
 
 
+.titlore{
+
+margin-top: 45px;
+margin-bottom: 55px;
+text-align: center;
+}
+
+.bordelore{
+
+border: 3px solid red;
+border-radius: 2%;
+background-color: antiquewhite;
+
+
+
+
+
+
+}
+
+.margpl{margin-top: 50px;
+margin-bottom: 50px;}
+
+.centlore{text-align: center;
+margin-top: 30px;
+margin-bottom: 30px;}
 
 /* fin del css para el lore */
+
+/* Creacion php */
+
+#carta{border: 3px solid black;}
+
+.centrarinf{text-align: center;}
+
+.centrado{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.espb{margin-bottom: 25px;}
+
+/* fin Creacion.php */
+

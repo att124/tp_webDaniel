@@ -1,5 +1,5 @@
 <?php
-
+require_once('complementos/nav.php');
 require_once('aldeano.php');
 require_once('herencia.php');
 require_once('arbusto.php');
@@ -18,72 +18,147 @@ $selec = $_POST['opciones'];
 
 if ($selec == 'Aldeanochino'){
 
-echo '---------------------------------------------------------'.'<br>';
+//echo '---------------------------------------------------------'.'<br>';
 
-echo 'Aldeano chino'.'<br>';
+//echo 'Aldeano chino'.'<br>';
 
 $nombre = new AldeanoChino($nombre);
 
-echo 'El nombre del aldeano es: '.$nombre->getNombre().'<br>';
+//echo 'El nombre del aldeano es: '.$nombre->getNombre().'<br>';
 
 $arbusto = new Arbusto();
 
 $nombre -> setVelocidadRecoleccion(18);
 
 
-echo 'la velocidad es de: '.$nombre -> getVelocidad().'<br>';
+//echo 'la velocidad es de: '.$nombre -> getVelocidad().'<br>';
 
-echo 'El bonus del aldeano es: '.$nombre -> getBonus().'%'.'<br>';
+//echo 'El bonus del aldeano es: '.$nombre -> getBonus().'%'.'<br>';
 
-$nombre -> recolectar($arbusto).'<br>';
+//$nombre -> recolectar($arbusto).'<br>';
 
 $selec = "";
 
+echo "
+<div class=centrado>
+<div class=col-lg-3>
+<article class='card text-center'>
+    <img src=https://fakeimg.pl/300x200/?text=1 alt=foto 1 width=300 height=200 class='rounded img-fluid mx-auto d-block'>
+    <h2>Aldeano Chino</h2>";
+   echo '<p class=centrarinf>'.'El nombre del aldeano: '.$nombre->getNombre().'<br>'.'</p>';
+   echo '<p class=centrarinf>'.'La velocidad de recoleccion: '.$nombre->getVelocidad().'<br>'.'</p>';
+   echo '<p class=centrarinf>'.'El bonus es de: '.$nombre->getBonus().'%'.'<br>'.'</p>';
+   echo '<p class=centrarinf>'.$nombre->recolectar($arbusto).'<br>';
+   echo "<form method=post action=index.php class=espb> <button type=submit>Volver</button></form>";
+   echo "
+</article>
+</div> 
+</div>
+"
+;
 
-echo '-----------------------------------------------------------';
+
+
+// echo '-----------------------------------------------------------';
 
 
 } elseif ($selec == 'AldeanoFranco'){
 
-echo '---------------------------------------------------------'.'<br>';
+//echo '---------------------------------------------------------'.'<br>';
 
-echo 'Aldeano franco'.'<br>';
+//echo 'Aldeano franco'.'<br>';
 
 $nombre = new AldeanoFranco($nombre);
 
-echo 'El nombre del aldeano es: '.$nombre->getNombre().'<br>';
+//echo 'El nombre del aldeano es: '.$nombre->getNombre().'<br>';
 
 $arbusto = new Arbusto();
 
 $nombre -> setVelocidadRecoleccion(18);
 
-echo 'la velocidad es de: '.$nombre -> getVelocidad().'<br>';
+//echo 'la velocidad es de: '.$nombre -> getVelocidad().'<br>';
 
-echo 'El bonus del aldeano es: '.$nombre -> getBonus().'%'.'<br>';
+//echo 'El bonus del aldeano es: '.$nombre -> getBonus().'%'.'<br>';
 
 
 
-$nombre -> recolectar($arbusto).'<br>';
+//$nombre -> recolectar($arbusto).'<br>';
 
-echo '---------------------------------------------------------';
+
+
+
+
+
+
+echo "
+<div class=centrado>
+<div class=col-lg-3>
+<article class='card text-center'>
+    <img src=https://fakeimg.pl/300x200/?text=1 alt=foto 1 width=300 height=200 class='rounded img-fluid mx-auto d-block'>
+    <h2>Aldeano Franco</h2>";
+   echo '<p class=centrarinf>'.'El nombre del aldeano: '.$nombre->getNombre().'<br>'.'</p>';
+   echo '<p class=centrarinf>'.'La velocidad de recoleccion: '.$nombre->getVelocidad().'<br>'.'</p>';
+   echo '<p class=centrarinf>'.'El bonus es de: '.$nombre->getBonus().'%'.'<br>'.'</p>';
+   echo '<p class=centrarinf>'.$nombre->recolectar($arbusto).'<br>';
+   echo "<form method=post action=index.php class=espb> <button type=submit>Volver</button></form>";
+   echo "
+</article>
+</div> 
+</div>
+"
+;
+
+
+
+
+
+
+
+//echo '---------------------------------------------------------';
 
 } elseif ($selec == 'pesquero') {
 
-    echo '----------------------------------------------------------------'.'<br>';
+    //echo '----------------------------------------------------------------'.'<br>';
 
     $pesquero = new Pesquero();
 
     $pesquero -> setNombreBarco($nombre);
 
-     echo 'El nombre de tu barco es: '.$pesquero -> getNombrePesquero().'<br>';
+    // echo 'El nombre de tu barco es: '.$pesquero -> getNombrePesquero().'<br>';
           
     $peces = new BancoDePesca();
 
-    echo 'La cantidad de peces del Banco de pesca es de: '.$peces -> getAlimento().'<br>';
+    //echo 'La cantidad de peces del Banco de pesca es de: '.$peces -> getAlimento().'<br>';
 
-    $pesquero -> recolectar($peces);
+    //$pesquero -> recolectar($peces);
 
-echo '-------------------------------------------------------------------'.'<br>';
+
+
+
+    echo "
+    <div class=centrado>
+    <div class=col-lg-3>
+    <article class='card text-center'>
+    <img src=https://fakeimg.pl/300x200/?text=1 alt=foto 1 width=300 height=200 class='rounded img-fluid mx-auto d-block'>
+    <h2>Pesquero</h2>";
+    echo '<p class=centrarinf>'.'El nombre del aldeano: '.$pesquero->getNombrePesquero().'<br>'.'</p>';
+    echo '<p>'.'La cantidad de peces del Banco de pesca es de: '.$peces -> getAlimento().'</p>'.'<br>';
+    echo '<p class=centrarinf>'.$pesquero->recolectar($peces).'<br>';
+    echo "<form method=post action=index.php class=espb> <button type=submit>Volver</button></form>";
+    echo "
+</article>
+</div> 
+</div>
+"
+;
+
+
+
+
+
+
+
+//echo '-------------------------------------------------------------------'.'<br>';
 
 }
 
@@ -95,6 +170,6 @@ echo '-------------------------------------------------------------------'.'<br>
 
 }
 
-
+require_once('complementos/footer.php');
 
 ?>

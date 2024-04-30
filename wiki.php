@@ -8,7 +8,7 @@ require_once('arbusto.php');
 require_once('pesquero.php');
 require_once('herencia.php');
 
-$aldeanoc = new AldeanoChino("Aldeano chino");
+$aldeanoc = new AldeanoChino("Aldeano Chino");
 $aldeanoc -> setVelocidadRecoleccion(18);
 $aldeanof = new AldeanoFranco("Aldeano Franco");
 $aldeanof -> setVelocidadRecoleccion(18);
@@ -29,7 +29,7 @@ $bancodepesca4 = new BancoDePesca();
     <h3 class="hwik"> Aldeanos </h3>
     <div class="centrw">
     <div class="table-responsive">
-<table border="1">
+<table>
 <caption>Aldeanos</caption>
 <thead>
 <th>Imagen</th>
@@ -94,7 +94,7 @@ $bancodepesca4 = new BancoDePesca();
     <h3 class="hwik"> Pesquero </h3>
     <div class="centrw">
     <div class="table-responsive">
-    <table class="pezt" border="1">
+    <table class="pezt">
         <caption>pesqueros</caption>
     <thead>
     <th>Imagen</th>
