@@ -30,6 +30,11 @@ function getAlimento(){
 
 }
 
+//$arbusto07 = new Arbusto();
+
+//echo 'El alimento del arbusto es de: '.$arbusto07 -> getAlimento();
+
+
 // fin de la clase arbusto --------------------------------------------------------------------------------------------------------------------------------------------
 
 ?>

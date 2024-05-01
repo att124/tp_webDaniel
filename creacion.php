@@ -1,10 +1,10 @@
 <?php
 require_once('complementos/nav.php');
-require_once('aldeano.php');
-require_once('herencia.php');
-require_once('arbusto.php');
-require_once('pesquero.php');
-require_once('bancodepesca.php');
+require_once('objetos/aldeano.php');
+require_once('objetos/herencia.php');
+require_once('objetos/arbusto.php');
+require_once('objetos/pesquero.php');
+require_once('objetos/bancodepesca.php');
 
 
 //require_once('recolectable.php');
@@ -141,7 +141,7 @@ echo "
     <article class='card text-center'>
     <img src=https://fakeimg.pl/300x200/?text=1 alt=foto 1 width=300 height=200 class='rounded img-fluid mx-auto d-block'>
     <h2>Pesquero</h2>";
-    echo '<p class=centrarinf>'.'El nombre del aldeano: '.$pesquero->getNombrePesquero().'<br>'.'</p>';
+    echo '<p class=centrarinf>'.'El nombre del pesquero es: '.$pesquero->getNombrePesquero().'<br>'.'</p>';
     echo '<p>'.'La cantidad de peces del Banco de pesca es de: '.$peces -> getAlimento().'</p>'.'<br>';
     echo '<p class=centrarinf>'.$pesquero->recolectar($peces).'<br>';
     echo "<form method=post action=index.php class=espb> <button type=submit>Volver</button></form>";

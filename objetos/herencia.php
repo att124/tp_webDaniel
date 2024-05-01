@@ -51,18 +51,18 @@ function __construct(String $nombre,$bonus=25){
 
 // echo 'Aldeano Chino'.'<br>';
 
-// $xiao = new AldeanoChino("Xiao");
+ //$xiao = new AldeanoChino("Xiao");
 
-// $arbusto0 = new arbusto();
+ //$arbusto0 = new arbusto();
 
-// $xiao -> setVelocidadRecoleccion(18);
+ //$xiao -> setVelocidadRecoleccion(18);
 
 
-// echo 'la velocidad es de: '.$xiao -> getVelocidad();
+ //echo 'la velocidad es de: '.$xiao -> getVelocidad();
 
-// echo '<br>';
+ //echo '<br>';
 
-// $xiao -> recolectar($arbusto0);
+ //$xiao -> recolectar($arbusto0);
 
 // echo 'El bonus del aldeano es: '.$xiao -> getBonus().'%'.'<br>';
 
@@ -75,15 +75,15 @@ function __construct(String $nombre,$bonus=25){
 
 // $franco = new AldeanoFranco("Gustavo");
 
-// $arbusto1 = new Arbusto();
+ // $arbusto1 = new Arbusto();
 
-// $franco -> setVelocidadRecoleccion(18);
+ // $franco -> setVelocidadRecoleccion(18);
 
-// echo 'la velocidad es de: '.$franco -> getVelocidad().'<br>';
+ // echo 'la velocidad es de: '.$franco -> getVelocidad().'<br>';
 
-// echo 'el bonus del aldeano es: '.$franco -> getBonus().'%'.'<br>';
+//  echo 'el bonus del aldeano es: '.$franco -> getBonus().'%'.'<br>';
 
-// $franco -> recolectar($arbusto1);
+ // $franco -> recolectar($arbusto1);
 
 
 

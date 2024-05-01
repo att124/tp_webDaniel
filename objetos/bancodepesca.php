@@ -27,6 +27,9 @@ class BancoDePesca implements Recolectable {
     
 }
 
+//$peces06 = new BancoDePesca();
+//echo 'El alimento del banco de pesca es de: '.$peces06 -> getAlimento();
+
 // fin de la clase Banco de pesca.
 ?>
 

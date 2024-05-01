@@ -2,11 +2,11 @@
 
 
 require_once('complementos/nav.php');
-require_once('aldeano.php');
-require_once('bancodepesca.php');
-require_once('arbusto.php');
-require_once('pesquero.php');
-require_once('herencia.php');
+require_once('objetos/aldeano.php');
+require_once('objetos/bancodepesca.php');
+require_once('objetos/arbusto.php');
+require_once('objetos/pesquero.php');
+require_once('objetos/herencia.php');
 
 $aldeanoc = new AldeanoChino("Aldeano Chino");
 $aldeanoc -> setVelocidadRecoleccion(18);
