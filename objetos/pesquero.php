@@ -60,8 +60,8 @@ class Pesquero implements Recolectar {
     
 }
 
-$barca = new Pesquero();
-$barca -> setNombreBarco("Barca");
-echo 'El nombre de tu barco pesquero es: '.$barca -> getNombrePesquero();
+//$barca = new Pesquero();
+//$barca -> setNombreBarco("Barca");
+//echo 'El nombre de tu barco pesquero es: '.$barca -> getNombrePesquero();
 
 ?>

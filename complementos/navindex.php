@@ -37,7 +37,7 @@
                 
             <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link color" id="principal" href="index.php">index</a>
+                        <a class="nav-link color" id="principal" href="index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link color" href="lore.php">Lore</a>
