@@ -71,7 +71,7 @@ function __construct(String $nombre,$bonus=25){
 
 // echo '-----------------------------------------------------'.'<br>';
 
-// echo 'Aldeano franco'.'<br>';
+//echo 'Aldeano franco'.'<br>';
 
 // $franco = new AldeanoFranco("Gustavo");
 
@@ -81,7 +81,7 @@ function __construct(String $nombre,$bonus=25){
 
  // echo 'la velocidad es de: '.$franco -> getVelocidad().'<br>';
 
-//  echo 'el bonus del aldeano es: '.$franco -> getBonus().'%'.'<br>';
+ // echo 'el bonus del aldeano es: '.$franco -> getBonus().'%'.'<br>';
 
  // $franco -> recolectar($arbusto1);
 
