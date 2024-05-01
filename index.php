@@ -35,9 +35,9 @@ if (!isset($_POST['seleccion'])) {
     <form action=# method=post>
     
     <input type = radio id=aldeano name=seleccion value=aldeano>
-    <label for=aldeano> <img src=https://fakeimg.pl/200x70/?text=1 alt=foto 1 width=200 height=50 class=rounded img-fluid d-md-block></label> <br>
+    <label for=aldeano> <img src=imgs/btnald.png alt=foto 1 width=200 height=50 class=rounded img-fluid d-md-block></label> <br>
     <input type=radio id=barco name=seleccion value=barco>
-    <label for=barco id=esp1><img src=https://fakeimg.pl/200x70/?text=1 alt=foto 1 width=200 height=50 class=rounded img-fluid d-md-block></label><br>
+    <label for=barco id=esp1><img src=imgs/btnpesq.png alt=foto 1 width=200 height=50 class=rounded img-fluid d-md-block></label><br>
     <button type=submit id=botonins>Seleccionar</button>
     
     </form>

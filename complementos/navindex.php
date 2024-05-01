@@ -30,7 +30,7 @@
             </button>
             
             <a href="index.php" class="d-lg-block"> 
-        <img src="https://fakeimg.pl/200x70/?text=1" alt="foto 1" width="200" height="50" class="rounded img-fluid d-md-block" id="logo"> 
+        <img src="imgs/logo.png" alt="foto 1" width="200" height="50" class="rounded img-fluid d-md-block" id="logo"> 
              </a>
             
              <div class="collapse navbar-collapse" id="navbarNav">

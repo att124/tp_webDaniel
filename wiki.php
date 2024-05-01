@@ -40,14 +40,14 @@ $bancodepesca4 = new BancoDePesca();
 <tbody>
   <tr>
 
-  <td><img src="https://fakeimg.pl/70x70/?text=1" alt="foto 1" width="70" height="70" class="rounded img-fluid d-md-block"></td>
+  <td><img src="imgs/aldeanochino.png" alt="foto 1" width="100" height="100" class="rounded img-fluid d-md-block"></td>
   <td><?php echo $aldeanoc->getNombre();?></td>
   <td><?php echo $aldeanoc->getBonus().'%';?></td>
   <td><?php echo $aldeanoc->recolectar($arbusto3);?></td>
     
  </tr>
     <tr>
-    <td><img src="https://fakeimg.pl/70x70/?text=1" alt="foto 1" width="70" height="70" class="rounded img-fluid d-md-block"></td>
+    <td><img src="imgs/aldeana.png" alt="Aldeano franco" width="100" height="100" class="rounded img-fluid d-md-block"></td>
     <td><?php echo $aldeanof->getNombre();?></td>
     <td><?php echo $aldeanof->getBonus().'%';?></td>
     <td><?php echo $aldeanof->recolectar($arbusto4);?></td>
@@ -69,17 +69,17 @@ $bancodepesca4 = new BancoDePesca();
     <caption>Arbusto y banco de pesca.</caption>
 <thead>
    <th>imagen</th> 
-<th>Nombre:</th>
-<th>Cantidad de alimento:</th>
+<th>Nombre</th>
+<th>Cantidad de alimento</th>
 </thead>
 <tbody>
 <tr>
-    <td><img src="https://fakeimg.pl/70x70/?text=1" alt="foto 1" width="70" height="70" class="rounded img-fluid d-md-block"></td>
+    <td><img src="imgs/arbusto.png" alt="foto 1" width="100" height="100" class="rounded img-fluid d-md-block"></td>
     <td>Arbusto</td>
     <td><?php echo $arbusto3->getAlimento();?></td>
 </tr>
 <tr>
-    <td><img src="https://fakeimg.pl/70x70/?text=1" alt="foto 1" width="70" height="70" class="rounded img-fluid d-md-block"></td>
+    <td><img src="imgs/bancop.png" alt="Banco de pesca." width="100" height="100" class="rounded img-fluid d-md-block"></td>
     <td>Banco de pesca</td>
     <td><?php echo $bancodepesca4->getAlimento();?></td>
 </tr>
@@ -103,7 +103,7 @@ $bancodepesca4 = new BancoDePesca();
     </thead>
     <tbody>
     <tr>
-    <td><img src="https://fakeimg.pl/70x70/?text=1" alt="foto 1" width="70" height="70" class="rounded img-fluid d-md-block"></td>
+    <td><img src="imgs/pesquerow.png" alt="Pesquero." width="100" height="100" class="rounded img-fluid d-md-block"></td>
     <td><?php echo $pescador01-> getNombrePesquero();?></td>
     <td><?php echo $pescador01-> recolectar($bancodepesca4);?></td>
     </tr>

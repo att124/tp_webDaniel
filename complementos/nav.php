@@ -20,7 +20,7 @@
     <title>Aldeanos y barcos</title>
 </head>
 
-<body>
+<body class="colorbod">
     
 <header>
 
@@ -30,7 +30,7 @@
             </button>
             
             <a href="index.php" class="d-lg-block"> 
-        <img src="https://fakeimg.pl/200x70/?text=1" alt="foto 1" width="200" height="50" class="rounded img-fluid d-md-block" id="logo"> 
+        <img src="imgs/logo.png" alt="foto 1" width="200" height="50" class="rounded img-fluid d-md-block" id="logo"> 
              </a>
             
              <div class="collapse navbar-collapse" id="navbarNav">
@@ -42,6 +42,7 @@
                     <li class="nav-item">
                         <a class="nav-link color" href="lore.php">Lore</a>
                     </li>
+                
                     <li class="nav-item">
                         <a class="nav-link color" href="wiki.php">Wiki</a>
                     </li>

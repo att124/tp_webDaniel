@@ -42,8 +42,8 @@ $selec = "";
 echo "
 <div class=centrado>
 <div class=col-lg-3>
-<article class='card text-center'>
-    <img src=https://fakeimg.pl/300x200/?text=1 alt=foto 1 width=300 height=200 class='rounded img-fluid mx-auto d-block'>
+<article class='card text-center' id=cr1>
+    <img src=imgs/chinof.png alt=aldeano_chino width=300 height=200 class='rounded img-fluid mx-auto d-block'>
     <h2>Aldeano Chino</h2>";
    echo '<p class=centrarinf>'.'El nombre del aldeano: '.$nombre->getNombre().'<br>'.'</p>';
    echo '<p class=centrarinf>'.'La velocidad de recoleccion: '.$nombre->getVelocidad().'<br>'.'</p>';
@@ -93,8 +93,8 @@ $nombre -> setVelocidadRecoleccion(18);
 echo "
 <div class=centrado>
 <div class=col-lg-3>
-<article class='card text-center'>
-    <img src=https://fakeimg.pl/300x200/?text=1 alt=foto 1 width=300 height=200 class='rounded img-fluid mx-auto d-block'>
+<article class='card text-center' id=cr>
+    <img src=imgs/aldeanaf.png alt=aldeana width=300 height=200 class='rounded img-fluid mx-auto d-block'>
     <h2>Aldeano Franco</h2>";
    echo '<p class=centrarinf>'.'El nombre del aldeano: '.$nombre->getNombre().'<br>'.'</p>';
    echo '<p class=centrarinf>'.'La velocidad de recoleccion: '.$nombre->getVelocidad().'<br>'.'</p>';
@@ -138,8 +138,8 @@ echo "
     echo "
     <div class=centrado>
     <div class=col-lg-3>
-    <article class='card text-center'>
-    <img src=https://fakeimg.pl/300x200/?text=1 alt=foto 1 width=300 height=200 class='rounded img-fluid mx-auto d-block'>
+    <article class='card text-center' id=cr2>
+    <img src=imgs/pesquerof.png alt=pesquero width=300 height=200 class='rounded img-fluid mx-auto d-block'>
     <h2>Pesquero</h2>";
     echo '<p class=centrarinf>'.'El nombre del pesquero es: '.$pesquero->getNombrePesquero().'<br>'.'</p>';
     echo '<p>'.'La cantidad de peces del Banco de pesca es de: '.$peces -> getAlimento().'</p>'.'<br>';

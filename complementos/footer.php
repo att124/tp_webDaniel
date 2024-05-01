@@ -4,7 +4,7 @@
  <div class="row">
 
 <div class="col-5"><p class="textfooter"> Alumno: Fernández Daniel </p> </div>
-<div class="col-2"> <img src="https://fakeimg.pl/40x40/?text=1" class="mx-auto d-block rounded-circle" alt="logo posiblemente" width="40" height="40"> </div>
+<div class="col-2"> <img src="imgs/logofooter.png" class="mx-auto d-block rounded-circle" alt="logo posiblemente" width="40" height="40"> </div>
 <div class="col-5"><p class="textfooter">Profesor: Jonathan Suarez</p></div>
 
 </div>
